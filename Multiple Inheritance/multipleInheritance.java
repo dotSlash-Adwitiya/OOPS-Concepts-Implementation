@@ -15,7 +15,7 @@ interface PI1 {
   // * Methods in interfaces can only have : static, public, and default MODIFIERS  
   void fun2();
 
-  // * We need to provide a body for static methods in java
+  // * We need to provide a body for static methods inside interfaces in java
   static void staticMethod() {
     System.out.println("I am a static method, I CANNOT be abstract");
   }
@@ -37,9 +37,10 @@ public class multipleInheritance implements PI1, PI2 {
     PI2.super.fun();
   }
 
+  // * The implementing class is required to give a common implementation for method defined in both interfaces
   @Override
   public void fun2(){
-    System.out.println("Overrident methods");
+    System.out.println("Overriden methods");
   }
 
   public static void main(String args[]){
