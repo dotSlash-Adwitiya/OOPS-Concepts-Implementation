@@ -8,15 +8,15 @@ class MethodOverloading{
 
   // * Below code will generate compiler error:
   // * cannot overload functions distinguished by return type alone
-  int overloadedMethod(){
-    cout << "Method - 1" << endl;
-  }
+  // int overloadedMethod(){
+  //   cout << "Method - 1" << endl;
+  // }
 
 };
 
 int main()
 {
   MethodOverloading om;
-  om.overloadedMethod();
+  // om.overloadedMethod();
   return 0;
 }
